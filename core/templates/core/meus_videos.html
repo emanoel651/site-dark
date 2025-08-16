@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meus Vídeos Gerados</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; }
+        .video-card { border: 1px solid #ccc; padding: 1em; margin-bottom: 1em; border-radius: 8px; }
+        .video-card h3 { margin-top: 0; }
+        .status-processando { color: orange; }
+        .status-concluido { color: green; }
+        .status-erro { color: red; }
+        a { color: #007bff; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <h1>Meus Vídeos Gerados</h1>
+    <a href="{% url 'pagina_gerador' %}">Gerar Novo Vídeo</a>
+    <hr>
+
+    {% if videos %}
+        {% for video in videos %}
+            <div class="video-card">
+                <h3>Vídeo criado em: {{ video.criado_em|date:"d/m/Y H:i" }}</h3>
+                <p>Texto: "{{ video.texto_overlay|default:'Nenhum' }}"</p>
+                <p>Status: <b class="status-{{ video.status|lower }}">{{ video.get_status_display }}</b></p>
+
+                {% if video.status == 'CONCLUIDO' and video.arquivo_final %}
+                    <a href="{{ video.arquivo_final.url }}" download><strong>Baixar Vídeo (MP4)</strong></a>
+                {% endif %}
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>Você ainda não gerou nenhum vídeo.</p>
+    {% endif %}
+</body>
+</html>

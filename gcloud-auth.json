@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "gen-lang-client-0199255129",
+  "private_key_id": "f54b39ef105e81349a8488c4b36f85348681c7ad",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDFH61LBZxiRaij\nUJXbSvu9WTr80PtetSEOQeHBFAJmuDgGYglECjlTZxkBWCIFkjfn0pko+ze1vTKb\nO5mmLUlIP4vg+RZuS9M9k8cs8cNnYSGfm9FPnQ5Zn4Aoo+tErHiTzWOwid0YbVKY\nv7zpA2q2M/A87SY47P3+Jguh25tN9YD/NNcMRkgnx0CBHg26OmZgxOJCTvjbuzv1\nA6y1bUE5Jnl6Yl3XyMdBJe7x5vxTmAGPBPtjbLE37/5snAaSWnCw2INKGiG3WFgH\nyTbDb+ubNvElXTjciUXfb5pVNmOKEj4On/brmEjGM4FSqyFQie3QGXhZIHJXUooS\n6VkBFys9AgMBAAECggEALwpEYRkFbNkZKWHfZP2jjdenkTGwrrTUHtIfdKMZAJi4\n++L0uZkj/XBmofC9a61tLGPP+1zZukOcOjmSjLqVWImbkHP4g5kSH4lumB3YZsjh\nzHQTUqeUx1Pd8jTNva1Xt9OlVLlNetkJwxxMUSGo2zKRQ4THIIIDiZzcHUOp78P5\nB1GGKSI0qClE0cCt68MXUkYAVuKW/ggrsGxyKAo9fTy0n0uYukwvaT1quj9IL+U7\nUar4Zk1LYEbiyOFtrwbM2g+6I9ugNzhNbAofMLH9Taq/BrlG4mofDuqSEMVP7bO6\nBeVoeRCfT7BJLLIC1om521sDDgn26VrIHa/M0ws0yQKBgQDxUt3W6N7WCotctXRU\ni4afM4sf24DNVD7awEMebnpfe5BvzgbAJypzYvKwTN/h1JE4YCyV7uZyQufb7BKN\nuXHIfP48HZ/iHN3X9UeXiYf9XEX9DnZ2tOjkp4cXHk4eJc8jdfIyUdZW/8WhlKye\nzyO2iiwfjHbGcb+RbmG/cUKe1QKBgQDRHKrqu7AP+LUj07EpB3ckO6Msonat6kMp\nfxkpBbti1etr0XA8jbFAPRQAMrKj4gxmqtk64xT/aDumvUd1aRiWccJZ8IJZlWuQ\ntb8Fz2CRDurrFkMbWtuEf0meR3yxwTHqscP4fbMPDNn4KkXFoVBXIlv6jLNH6t3I\nUU+KKT2eyQKBgCTrEnkQQxbnog5azCMq/TtZvUzwXbIL01nP0/TR3fLBioUwNaQr\n2bixSINkH1QDGvxO6kM9uw974NCqOuRnnFqZlKNJvO3wkJe7NGqgZaeC+EoQblsW\nrhJc9rO4tSazjg7UumqsTmgc1PU1M3tQIRyJ4toouPr+59mt01JgV1rJAoGAcwbD\n9c88b+ytJ4IBB8K1hNbRUXIkulIMk7z4SBqBE0L89xgEFysR/3YZlGpO3dswWyFL\n0RqsqDnb5kJkFm+zOL5m3DZyXXjV7IotA7MpOWHtU1exnlCCRAYIpupH6zeMj78t\nP3lVj8fP9rS6IJY1rViXI+FVlQ/a45/mkudQoBECgYEA8BxtU91iyfa1hoBNdJbD\n/LCuJLM8oShEH0Fcrz+zVxeFuh/KEK5s5DkBht33VV/HCD2xZ09XJWPmPyTt40Ys\nKGGxk4cejLyhibvZjBL5cN1maPDTVYpAo3LelqkA7GI7VtG9GGzTB2Tu9eUkDk60\nx7h8PGP5teX6rbySlcy1RbA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "gerador-videos-tts@gen-lang-client-0199255129.iam.gserviceaccount.com",
+  "client_id": "114944880145964959112",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gerador-videos-tts%40gen-lang-client-0199255129.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
