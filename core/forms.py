@@ -9,25 +9,18 @@ VOZES_NARRADOR = [
     ('pt-BR-Neural2-B', 'Masculina - Voz Neural'),
 ]
 
-TONS_VOZ = [
-    (2.0, 'Agudo'),
-    (0.0, 'Normal'),
-    (-2.0, 'Grave'),
-]
-
-PLANO_DE_FUNDO_CHOICES = [
-    ('normal', 'Normal / Escuro'),
-    ('claro', 'Claro'),
-]
+TONS_VOZ = [(2.0, 'Agudo'), (0.0, 'Normal'), (-2.0, 'Grave')]
+PLANO_DE_FUNDO_CHOICES = [('normal', 'Normal / Escuro'), ('claro', 'Claro')]
 
 # --- MAIS OPÇÕES DE FONTE ---
 FONTES_TEXTO = [
-    ('arial', 'Arial (Padrão)'),
+    ('arial', 'Arial Bold'), # <-- ALTERADO AQUI
     ('times', 'Times New Roman'),
     ('courier', 'Courier New'),
     ('impact', 'Impact'),
     ('verdana', 'Verdana'),
     ('georgia', 'Georgia'),
+    ('cunia', 'Cunia (Decorativa)'),
 ]
 # --- FIM DAS NOVAS OPÇÕES ---
 
@@ -51,10 +44,8 @@ class GeradorForm(forms.Form):
         label="Tamanho da Letra"
     )
     
-    # --- NOVOS CAMPOS DE ESTILO ---
     texto_negrito = forms.BooleanField(required=False, label="Negrito")
     texto_sublinhado = forms.BooleanField(required=False, label="Sublinhado")
-    # --- FIM DOS NOVOS CAMPOS ---
 
     duracao_segundos = forms.IntegerField(min_value=10, max_value=60, initial=30, label="Duração (em segundos)")
     loop_video = forms.BooleanField(required=False, label="Repetir o vídeo (loop)?")
