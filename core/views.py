@@ -261,3 +261,31 @@ def pagina_gerador(request):
 def meus_videos(request):
     videos = VideoGerado.objects.filter(usuario=request.user).order_by('-criado_em')
     return render(request, 'core/meus_videos.html', {'videos': videos})
+
+
+def index(request):
+    return render(request, 'core/home.html')
+# NOVA FUNÇÃO:
+def como_funciona(request):
+    return render(request, 'core/como_funciona.html')
+
+def planos(request):
+    return render(request, 'core/planos.html')
+
+def cadastre_se(request):
+    """
+    Renderiza a página de cadastro.
+    """
+    return render(request, 'core/cadastre-se.html')
+
+def login_view(request):
+    """
+    Renderiza a página de login.
+    """
+    return render(request, 'core/login.html')
+
+def suporte(request):
+    """
+    Renderiza a página de suporte e FAQ.
+    """
+    return render(request, 'core/suporte.html')
