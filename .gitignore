@@ -1,0 +1,33 @@
+# Arquivo .gitignore para o projeto L.E DARK
+
+# Ambientes Virtuais
+# Nunca enviar a pasta do ambiente virtual
+venv/
+env/
+.env
+
+# Ficheiros de autenticação e segredos
+# Ignora o arquivo de credenciais do Google Cloud
+gcloud-auth.json
+gcloud-auth.json
+
+# Base de dados local
+# Ignora o banco de dados de desenvolvimento
+db.sqlite3
+
+# Arquivos de Mídia (Uploads de Usuários)
+# A pasta media é para arquivos que os usuários enviam, não deve ir para o repositório
+media/
+
+# Ficheiros temporários do Python
+# Ignora as pastas de cache do Python e arquivos compilados
+__pycache__/
+*.pyc
+
+# Arquivos de Configuração de IDEs e Editores
+.vscode/
+.idea/
+
+# Arquivos específicos do Sistema Operacional
+.DS_Store
+Thumbs.db
