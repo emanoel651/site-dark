@@ -331,7 +331,6 @@
         <form class="video-form" method="post">
             {% csrf_token %}
             
-            <!-- Seção: Configurações Básicas -->
             <div class="form-section">
                 <h3 class="form-section-title">Configurações Básicas</h3>
                 
@@ -352,12 +351,11 @@
                 </div>
             </div>
 
-            <!-- Seção: Texto do Vídeo -->
             <div class="form-section">
                 <h3 class="form-section-title">Texto do Vídeo</h3>
                 
                 <div class="form-field">
-                    <label for="{{ form.texto_overlay.id_for_label }}">{{ form.texto_overlay.label }}</label>
+                    <label for="{{ form.texto_overlay.id_for_label }}">{{ form.texto_overlay.label }} (Opcional se usar narração)</label>
                     {{ form.texto_overlay }}
                 </div>
 
@@ -386,10 +384,8 @@
                 </div>
             </div>
 
-            <!-- Divisor -->
             <div class="divider"></div>
 
-            <!-- Seção: Narração -->
             <div class="form-section">
                 <h3 class="form-section-title">Configurações de Narração</h3>
                 
@@ -398,6 +394,13 @@
                     {{ form.narrador_texto }}
                 </div>
 
+                <div class="checkbox-field">
+                    {{ form.legenda_sincronizada }}
+                    <label for="{{ form.legenda_sincronizada.id_for_label }}">{{ form.legenda_sincronizada.label }}</label>
+                </div>
+                <small style="color: var(--gray-500); padding-left: 2.5rem; margin-top: -1rem; display: block;">
+                    {{ form.legenda_sincronizada.help_text }}
+                </small>
                 <div class="form-field">
                     <label for="{{ form.narrador_voz.id_for_label }}">{{ form.narrador_voz.label }}</label>
                     <div class="voice-preview">
@@ -424,10 +427,8 @@
                 </div>
             </div>
 
-            <!-- Divisor -->
             <div class="divider"></div>
 
-            <!-- Seção: Configurações Avançadas -->
             <div class="form-section">
                 <h3 class="form-section-title">Configurações Avançadas</h3>
                 
